@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMMARYIT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 2rem;
+            max-width: 800px;
+            width: 100%;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .upload-section, .text-input-section, .result-section, .similarity-section {
+            margin-bottom: 2rem;
+        }
+        input[type="file"], textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .document-box {
+            border: 1px solid #3498db;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+        .document-box h3 {
+            color: #3498db;
+            margin-top: 0;
+        }
+        .result-box {
+            background-color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        .result-box h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SAMMARYIT</h1>
+
+        <div class="upload-section">
+            <h2>Upload Documents</h2>
+            <input type="file" id="file-input" multiple>
+            <button id="upload-btn">Upload</button>
+        </div>
+
+        <div class="text-input-section">
+            <h2>Or Enter Text</h2>
+            <textarea id="text-input" rows="5" placeholder="Enter your text here"></textarea>
+            <button id="summarize-btn">Summarize</button>
+        </div>
+
+        <div id="result-section" class="result-section">
+            <!-- Results will be dynamically inserted here -->
+        </div>
+
+        <div class="similarity-section">
+            <h2>Similarity between documents:</h2>
+            <div id="similarity-result"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
