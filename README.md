@@ -18,7 +18,7 @@ SAMMARYIT is an advanced multi-document analysis system that processes documents
 
 1. Clone the repository
 ```bash
-git clone [your-repo-url]
+git clone [https://github.com/Shwetasgiri/Summary-Generator---LLM-Project.git]
 cd SAMMARYIT
 ```
 
